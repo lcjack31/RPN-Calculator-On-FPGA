@@ -1,0 +1,24 @@
+`timescale 1ns / 1ns 
+
+module stage3_tb;
+	reg clk;
+	reg signal_in;
+	wire signal_out;
+	Debounce Db(.clk(clk),.signal_in(signal_in),.signal_out(signal_out));
+	
+	initial begin
+		clk = 0;
+		forever begin
+		#20
+		clk = !clk;  // Generate 50MHz CLOCK
+		end
+	end
+	
+	initial begin
+		signal_in=0;
+		#1 signal_in=!signal_in;
+		#1 signal_in=!signal_in;
+		#1 signal_in=!signal_in;
+		#60000 signal_in=!signal_in;
+	end
+endmodule 

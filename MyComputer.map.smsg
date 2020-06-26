@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at CPU.v(72): always construct contains both blocking and non-blocking assignments File: E:/Melbourne Uni/Year 3/Semester 1/ELEN30010 DSD/ProjectVer3 Cong Li (741357)/CPU.v Line: 72
+Info (10281): Verilog HDL Declaration information at RPNCAL_tb.v(10): object "reset" differs only in case from object "Reset" in the same scope File: E:/Melbourne Uni/Year 3/Semester 1/ELEN30010 DSD/ProjectVer3 Cong Li (741357)/RPNCAL_tb.v Line: 10
